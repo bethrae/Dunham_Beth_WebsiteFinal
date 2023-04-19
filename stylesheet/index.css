@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "map-roman-compressed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-links a {
+    text-decoration: none;
+    color:white;
+    padding: 10px 30px;
+    margin: 10px 10px;
+    background-color: brown;
+    border-radius: 75%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+}
+.bg-color-red{
+    background-color: rgb(222, 204, 199);
+}
+.bg-shadow {
+    box-shadow: 0 0 10px rgb(165, 131, 121);
+}
+.show-desktop {
+        display:none;
+}
+@media screen and (min-width: 648px) {
+    .show-desktop {
+        display:block;
+    }
+}
+.kitchen{
+    width: 1920px;
+    height:auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+.buttons1 > a {
+    background-color:brown;
+    padding: 10px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.text{
+  width: 400px;
+  height: 400px;  
+  padding: 50px;
+  margin: auto;
+  border: 4px solid brown;
+  text-align: center;
+}
+.text2{
+    text-align: center;
+    text-decoration: none;
+    color: brown;
+}
+div.a{
+    outline: 3px;
+    outline-width: 100px;
+    outline-color: brown;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fade--in.active{
+animation-name: fade-in;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.fade--in{
+    opacity: 0;
+}
+@keyframes scale-up {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.scale--up{
+    transform: scale(1);
+}
+.scale--up.active{
+    animation-name: scale-up;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.fade--over.active{
+    animation-name: fade-over;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    }
+ @keyframes fade-over {
+    0%{
+         opacity: 0;
+         transform: translateX(200px);
+     }
+    100%{
+         opacity: 1;
+         transform: translateX(0px);
+    }
+}
+.fade--over{
+     opacity: 1;
+ }
